@@ -1,0 +1,18 @@
+arch
+i3
+alacritty
+tlp <-- !!!
+neovim
+chromium
+  ublock
+  vimium
+  darkreader
+yay
+tmux
+
+
+picom
+rofi
+polybar
+htop
+nm-applet
