@@ -1,33 +1,21 @@
-# .bashrc
+#
+# ~/.bashrc
+#
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
+alias ls='ls --color=auto'
+alias l='ls -lF'
+alias la='ls -AlF'
+alias grep='grep --color=auto'
+alias sudo='sudo '
+alias v='nvim'
+alias ytmus='yt-dlp -x -f bestaudio '
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+PS1='[\W]\$ '
 
-# User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-    for rc in ~/.bashrc.d/*; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
-fi
-unset rc
-
-alias v="nvim"
-alias l="ls -lF"
-alias la="ls -AlF"
-
+export PAGER='nvim +Man!'
+export GTK_THEME='Adwaita:dark'
 export TUKEVM='svra-ubuntu-server-0118.virtual.cloud.tuke.sk'
-
-PS1=' [\w]\$ '
+#export NVIM_APPNAME=
