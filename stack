@@ -9,10 +9,8 @@ chromium
   darkreader
 yay
 tmux
-
-
-picom
-rofi
-polybar
-htop
 nm-applet
+
+maybe:
+picom
+polybar
