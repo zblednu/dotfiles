@@ -1,16 +1,9 @@
 arch
-i3
+yay
 alacritty
 tlp <-- !!!
-neovim
+nvchad
+tmux
 chromium
   ublock
-  vimium
   darkreader
-yay
-tmux
-nm-applet
-
-maybe:
-picom
-polybar
