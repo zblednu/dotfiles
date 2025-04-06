@@ -1,9 +1,11 @@
 arch
 yay
-alacritty
+konsole
+kde
 tlp <-- !!!
 nvchad
 tmux
 chromium
   ublock
   darkreader
+  vimium-c
