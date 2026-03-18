@@ -1,0 +1,22 @@
+# os files
+.DS_Store
+._*
+
+# tools
+CLAUDE.md
+.claude/
+.zed/
+.dotfiles/
+
+# archives
+*.zip
+*.tar
+
+# logs
+*.log
+
+# temp files
+*.bak
+*.tmp
+*.swp
+

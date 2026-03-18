@@ -1,0 +1,105 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "which_key": {
+    "delay_ms": 0,
+    "enabled": true,
+  },
+  "helix_mode": false,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "agent_ui_font_size": 16.0,
+  "ui_font_size": 17.0,
+  "buffer_font_size": 16.0,
+  "journal": {
+    "path": "~/brain",
+    "hour_format": "hour24",
+  },
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "docker-compose": true,
+  },
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "title_bar": {
+    "show_sign_in": false,
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+  },
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
+  "file_scan_inclusions": [".env*"],
+  "tabs": {
+    "git_status": true,
+  },
+  "indent_guides": {
+    "active_line_width": 2,
+    "line_width": 0,
+    "background_coloring": "disabled",
+    "coloring": "indent_aware",
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "use_system_prompts": false,
+  "use_system_path_prompts": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light Hard",
+    "dark": "poimandres",
+  },
+  "vim": {
+    "use_system_clipboard": "on_yank",
+    "use_smartcase_find": true,
+  },
+}
