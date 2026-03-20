@@ -10,7 +10,6 @@ HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND='history -a'
 
 # --- PATH ---
 export PATH="$HOME/.local/bin:$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
@@ -22,7 +21,8 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # --- Prompt (minimal) ---
-PS1='\n\w \$ '
+PROMPT_COMMAND='history -a; PS1_CMD1=$(git branch --show-current 2>/dev/null)'
+PS1='\n\[\e[90m\]\w ${PS1_CMD1}\n\$ \[\e[0m\]'
 
 # --- Readline ---
 bind Space:magic-space
