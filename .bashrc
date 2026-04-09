@@ -13,15 +13,19 @@ shopt -s cmdhist
 
 # --- PATH ---
 export PATH="$HOME/.local/bin:$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # --- Editor ---
 export EDITOR='nvim'
 export VISUAL='nvim'
+export LANG='en_US.UTF-8'
 
 # --- Prompt (minimal) ---
-PROMPT_COMMAND='history -a; PS1_CMD1=$(git branch --show-current 2>/dev/null)'
+PROMPT_COMMAND='history -a; \
+history -n; \
+PS1_CMD1=$(git branch --show-current 2>/dev/null)'
 PS1='\n\[\e[90m\]\w ${PS1_CMD1}\n\$ \[\e[0m\]'
 
 # --- Readline ---
@@ -35,12 +39,15 @@ bind '"\C-n": history-search-forward'
 # --- Completions ---
 [[ -r "/opt/homebrew/etc/bash_completion" ]] && . "/opt/homebrew/etc/bash_completion"
 
+# --- Aliases ---
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ls='ls -1 --color -F'
+alias ll='ls -lh'
+alias la='ll -a'
+
 # --- fzf ---
 eval "$(fzf --bash)"
 
 # --- zoxide (replaces cd) ---
 eval "$(zoxide init bash --cmd cd)"
 
-# --- Aliases ---
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ls='ls --color'
