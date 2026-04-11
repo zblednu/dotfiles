@@ -1,9 +1,0 @@
-[user]
-	email = maksym@sharkscode.com
-	name = maksym
-[core]
-	editor = nvim
-[pull]
-	rebase = true
-[format]
-	pretty = oneline
