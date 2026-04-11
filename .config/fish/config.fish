@@ -2,7 +2,7 @@
 set -g fish_greeting
 
 # --- PATH ---
-fish_add_path -g $HOME/.local/bin $HOME/bin /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /opt/homebrew/opt/node@22/bin
+fish_add_path -g $HOME/.local/bin $HOME/bin /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin 
 
 # --- Editor ---
 set -gx EDITOR nvim
