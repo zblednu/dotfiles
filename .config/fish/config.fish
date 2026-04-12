@@ -15,7 +15,6 @@ if status --is-interactive
     
     # Replace ls with eza
     alias ls='eza -al --color=always --group-directories-first --icons=always --no-time' # preferred listing
-    alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
 
     # --- fzf ---
     fzf --fish | source
@@ -25,4 +24,7 @@ if status --is-interactive
 
     # --- Prompt ---
     starship init fish | source
+
+    # --- fnm ---
+    fnm env --use-on-cd | source
 end
