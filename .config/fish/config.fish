@@ -26,5 +26,5 @@ if status --is-interactive
     starship init fish | source
 
     # --- fnm ---
-    fnm env --use-on-cd | source
+    fnm env --use-on-cd --shell fish | source
 end
