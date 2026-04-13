@@ -1,6 +1,3 @@
-[user]
-	email = maksym@sharkscode.com
-	name = maksym
 [core]
 	editor = nvim
 [pull]
