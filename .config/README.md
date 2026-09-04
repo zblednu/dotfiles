@@ -24,7 +24,7 @@ dotfiles push
 
 ```bash
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-git clone --bare <repo-url> $HOME/.dotfiles
+git clone --bare git@github.com:zblednu/dotfiles.git $HOME/.dotfiles
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
 ```
