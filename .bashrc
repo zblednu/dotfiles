@@ -18,8 +18,8 @@ export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # --- Editor ---
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='vim'
+export VISUAL='vim'
 export LANG='en_US.UTF-8'
 
 # --- Prompt (minimal) ---
@@ -40,7 +40,7 @@ bind '"\C-n": history-search-forward'
 [[ -r "/opt/homebrew/etc/bash_completion" ]] && . "/opt/homebrew/etc/bash_completion"
 
 # --- Aliases ---
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls='ls -1 --color -F'
 alias ll='ls -lh'
 alias la='ll -a'
