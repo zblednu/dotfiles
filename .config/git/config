@@ -5,3 +5,6 @@
 [format]
 	pretty = oneline
 
+[user]
+	email = user
+	name = user
