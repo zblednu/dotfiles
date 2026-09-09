@@ -164,3 +164,11 @@ endif
 if exists(':Man') != 2 && !exists('g:loaded_man') && &filetype !=? 'man' && !has('nvim')
   runtime ftplugin/man.vim
 endif
+
+" ===== custom =====
+
+" ';' behaves like ':'.  Loses original ';' = repeat last f/t/till.
+nnoremap ; :
+
+" 'jk' in insert mode exits to normal mode.
+inoremap jk <Esc>
