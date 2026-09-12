@@ -172,3 +172,9 @@ nnoremap ; :
 
 " 'jk' in insert mode exits to normal mode.
 inoremap jk <Esc>
+
+" tab width of 2
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
