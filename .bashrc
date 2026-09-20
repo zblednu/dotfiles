@@ -12,10 +12,7 @@ shopt -s histappend
 shopt -s cmdhist
 
 # --- PATH ---
-export PATH="$HOME/.local/bin:$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH"
 
 # --- Editor ---
 export EDITOR='vim'
@@ -36,18 +33,9 @@ bind "set show-all-if-ambiguous on"
 bind '"\C-p": history-search-backward'
 bind '"\C-n": history-search-forward'
 
-# --- Completions ---
-[[ -r "/opt/homebrew/etc/bash_completion" ]] && . "/opt/homebrew/etc/bash_completion"
-
 # --- Aliases ---
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ls='ls -1 --color -F'
+alias ls='ls -1 -F --color=auto'
 alias ll='ls -lh'
 alias la='ll -a'
-
-# --- fzf ---
-eval "$(fzf --bash)"
-
-# --- zoxide (replaces cd) ---
-eval "$(zoxide init bash --cmd cd)"
-
+alias grep='grep --color=auto'
