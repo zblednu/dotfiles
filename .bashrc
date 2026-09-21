@@ -35,7 +35,7 @@ bind '"\C-n": history-search-forward'
 
 # --- Aliases ---
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ls='ls -1 -F --color=auto'
+alias ls='ls -1 -F'
 alias ll='ls -lh'
 alias la='ll -a'
 alias grep='grep --color=auto'
