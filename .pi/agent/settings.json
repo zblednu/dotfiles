@@ -1,0 +1,9 @@
+{
+  "lastChangelogVersion": "0.87.1",
+  "theme": "dark",
+  "hideThinkingBlock": true,
+  "enableInstallTelemetry": false,
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-flash",
+  "defaultThinkingLevel": "off"
+}

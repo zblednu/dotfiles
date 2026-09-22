@@ -1,3 +1,4 @@
+[[ -f ~/.env ]] && . ~/.env
 # --- General ---
 shopt -s checkwinsize
 shopt -s autocd 2>/dev/null
