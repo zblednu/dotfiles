@@ -39,3 +39,11 @@ alias ls='ls -1 -F'
 alias ll='ls -lh'
 alias la='ll -a'
 alias grep='grep --color=auto'
+# expand aliases in sudo
+alias sudo='sudo '
+alias sudoe='sudo -E '
+alias pi-sandbox='docker run --rm -it \
+    -v $HOME/.pi/agent:/root/.pi/agent \
+    -v $PWD:/workspace \
+    -e DEEPSEEK_API_KEY \
+    pi-sandbox'
