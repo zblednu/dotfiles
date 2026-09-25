@@ -48,3 +48,8 @@ alias pi-sandbox='docker run --rm -it \
     -v $PWD:/workspace \
     -e DEEPSEEK_API_KEY \
     pi-sandbox'
+
+# autostart tmux
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+fi
